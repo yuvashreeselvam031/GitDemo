@@ -10,8 +10,6 @@ public class ForEachExample {
         gamesList.add("Hocky");  
         System.out.println("------------Iterating by passing lambda expression--------------");  
         gamesList.forEach(games -> System.out.println(games));  
-        
-        gamesList.add("yuvashree");
-          
+             
     }  
 }

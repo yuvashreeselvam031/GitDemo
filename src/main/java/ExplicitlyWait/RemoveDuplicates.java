@@ -7,7 +7,7 @@ public class RemoveDuplicates {
 		//a) Use the declared String text as input
 		String text = "We learn java basics as part of java sessions in java week1";
 		//b) Initialize an integer variable as count	 
-	    int count = 0;
+	
 	    //c) Split the String into array and iterate over it 
 	    String[] split = text.split(" ");
 	    for (int i = 0; i < split.length; i++) {
@@ -17,6 +17,7 @@ public class RemoveDuplicates {
 	    		// e) if it is available then increase and count by 1. 
 	    		if (split[i].equals(split[j])) {
 	    			// if the count > 1 then replace the word as "" 
+	    			System.out.print(split[j]);
 	    			split[j]="";				
 				}
 				
@@ -26,7 +27,7 @@ public class RemoveDuplicates {
 		}
 	    //use another for loop to print the split
 	    for (int i = 0; i < split.length; i++) {
-			System.out.print(split[i]+" ");
+			//System.out.print(split[i]+" ");
 		}
 	    
 	}
